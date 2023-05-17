@@ -2,8 +2,7 @@
                 //values go from -180 to 180. I convert from 0 to 360 with the code below.
                 if (item.angle<0 && item.angle>-Math.PI)
                 {
-                    item.angle -= Math.PI;
-                    item.angle *= -1;
+                    item.angle += (2*Math.PI);
                 }
                 else if (item.angle == -0|| item.angle == -Math.PI)
                 {
